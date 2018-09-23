@@ -5,7 +5,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.driver
     dialect: org.hibernate.dialect.MySQL57Dialect
     url: jdbc:mysql://localhost:3306/pruebasb?useSSL=false
-    user: root
+    username: root
     password: 1997
   jpa:
     database: MYSQL
@@ -16,3 +16,6 @@ spring:
       hibernate:
         format_sql: true
         shema_update: true
+  logging:
+    level: 
+    
