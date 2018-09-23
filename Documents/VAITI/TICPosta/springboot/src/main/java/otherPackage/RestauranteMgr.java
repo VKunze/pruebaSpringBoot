@@ -13,7 +13,7 @@ public class RestauranteMgr {
 	
 	public void addRestaurante(Integer id, String nombre, String barrio) throws ResAlreadyExistsException{
 		Restaurante res=new Restaurante(id, nombre, barrio);
-		if(repository.findById(id)!=null) {
+		if(repository.existsById(id)) {
 			throw new ResAlreadyExistsException();
 		}
 		repository.save(res);
