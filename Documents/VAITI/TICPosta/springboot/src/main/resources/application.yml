@@ -2,13 +2,11 @@ spring:
   application:
     name: server
   datasource:
-    driverClassName: com.mysql.cj.jdbc.driver
-    dialect: org.hibernate.dialect.MySQL57Dialect
-    url: jdbc:mysql://localhost:3306/pruebasb?useSSL=false
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ticdb?useSSL=false
     username: root
     password: 1997
   jpa:
-    database: MYSQL
     show-sql: true
     hibernate:
       ddl-auto: update
@@ -18,4 +16,4 @@ spring:
         shema_update: true
   logging:
     level: 
-    
+      ROOT: INFO
