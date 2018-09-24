@@ -13,7 +13,7 @@ import otherPackage.exceptions.ResAlreadyExistsException;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class test {
+public class MainTests {
 
 	@Autowired
 	RestauranteMgr resMgr;
